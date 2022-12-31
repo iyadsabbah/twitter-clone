@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.left-section {
+    width: 20%;
+    position: relative;
+}
+
+.nav-list .nav-list-item {
+    list-style: none;
+    font-size: 29px;
+    margin: 20px 0;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 25px;
+
+}
+
+.nav-list-item a,.nav-list-item a:visited,.nav-list-item a:hover {
+    color: #000;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.nav-list-item:hover {
+    background-color: #f1f1f1;
+}
+.fa-house {
+    color: #000;
+}
+
+.nav-icon {
+    margin-right: 20px;
+}
+
+.tweet-btn {
+    width: 90%;
+    padding:  12px 5px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background-color: #1c98eb;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+.tweet-btn:hover {
+    opacity: 0.8;
+}
+
+.profile-image {
+    width: 35px;
+    border-radius: 50%;
+}
+.profile-image img {
+    border-radius: 50%;
+}
+.profile-card {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 30px;
+}
+.profile-card:hover{
+    background-color: #f1f1f1;
+}
+.full-name {
+    font-weight: bold;
+}
+.user-name{
+    color: rgb(111, 110, 110);
+}
+.names {
+    margin: 0 15px;
+}
