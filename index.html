@@ -1,38 +1,168 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Twitter</title> 
-    <link rel="stylesheet" href="style.css">
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twitter</title>
+    <link rel="stylesheet" href="style.css" />
     <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
-    
-<body>
-    <section class="left-section">
-    <nav class="nav-list">
-        <li class="nav-list-item"><a href=""><iconify-icon icon="mdi:house" class="nav-icon"></iconify-icon>Home</a></li>
-        <li class="nav-list-item"><a href=""><iconify-icon icon="ph:hash-fill" class="nav-icon"></iconify-icon>Explore</a></li>
-        <li class="nav-list-item"><a href=""><iconify-icon icon="ph:bell" class="nav-icon"></iconify-icon>Notifications</a></li>
-        <li class="nav-list-item"><a href=""><iconify-icon icon="ic:outline-mail-outline" class="nav-icon"></iconify-icon>Messages</a></li>
-        <li class="nav-list-item"><a href=""><iconify-icon icon="ph:bookmarks-light" class="nav-icon"></iconify-icon>Bookmarks</a></li>
-        <li class="nav-list-item"><a href=""><iconify-icon icon="material-symbols:featured-play-list-outline" class="nav-icon"></iconify-icon>Lists</a></li>
-        <li class="nav-list-item"><a href=""><iconify-icon icon="iconoir:profile-circled" class="nav-icon"></iconify-icon>profile</a></li>
-        <li class="nav-list-item"><a href=""><iconify-icon icon="ic:baseline-more-horiz" class="nav-icon"></iconify-icon>More</a></li>
-        <button class="tweet-btn">Tweet</button>
-    </nav>
+  </head>
 
-    <div class="profile-card">
-        <figure class="profile-image">
-            <img src="./profile.jpg" alt="profile" width="100%" height="100%">
-        </figure>
+  <body>
+    <main>
+      <!-- ----------------- left-section ------------- -->
+      <section class="left-section">
+        <nav class="nav-list">
+          <li class="nav-list-item">
+            <a href=""
+              ><iconify-icon icon="mdi:house" class="nav-icon"></iconify-icon
+              >Home</a
+            >
+          </li>
+          <li class="nav-list-item">
+            <a href=""
+              ><iconify-icon icon="ph:hash-fill" class="nav-icon"></iconify-icon
+              >Explore</a
+            >
+          </li>
+          <li class="nav-list-item">
+            <a href=""
+              ><iconify-icon icon="ph:bell" class="nav-icon"></iconify-icon
+              >Notifications</a
+            >
+          </li>
+          <li class="nav-list-item">
+            <a href=""
+              ><iconify-icon
+                icon="ic:outline-mail-outline"
+                class="nav-icon"
+              ></iconify-icon
+              >Messages</a
+            >
+          </li>
+          <li class="nav-list-item">
+            <a href=""
+              ><iconify-icon
+                icon="ph:bookmarks-light"
+                class="nav-icon"
+              ></iconify-icon
+              >Bookmarks</a
+            >
+          </li>
+          <li class="nav-list-item">
+            <a href=""
+              ><iconify-icon
+                icon="material-symbols:featured-play-list-outline"
+                class="nav-icon"
+              ></iconify-icon
+              >Lists</a
+            >
+          </li>
+          <li class="nav-list-item">
+            <a href=""
+              ><iconify-icon
+                icon="iconoir:profile-circled"
+                class="nav-icon"
+              ></iconify-icon
+              >profile</a
+            >
+          </li>
+          <li class="nav-list-item">
+            <a href=""
+              ><iconify-icon
+                icon="ic:baseline-more-horiz"
+                class="nav-icon"
+              ></iconify-icon
+              >More</a
+            >
+          </li>
+          <button class="tweet-btn">Tweet</button>
+        </nav>
 
-        <div class="names">
+        <div class="profile-card">
+          <figure class="profile-image">
+            <img src="./profile.jpg" alt="profile" width="100%" height="100%" />
+          </figure>
+
+          <div class="names">
             <div class="full-name">Eyad Sabbah</div>
             <div class="user-name">@sabbahiyad</div>
+          </div>
+          <iconify-icon
+            icon="ic:baseline-more-horiz"
+            class="nav-icon"
+          ></iconify-icon>
         </div>
-        <iconify-icon icon="ic:baseline-more-horiz" class="nav-icon"></iconify-icon>
-    </div>
-</section>
-</body>
+      </section>
+      <!-- ----------------- main section ------------- -->
+
+      <section class="main-section">
+        <nav class="home-bar">
+          <span style="color: #000; font-weight: 600; font-size: 27px"
+            >Home</span
+          >
+          <iconify-icon
+            icon="pepicons-pop:stars"
+            rotate="180deg"
+            style="font-size: 27px"
+          ></iconify-icon>
+        </nav>
+        <div class="header">
+          <div class="input-container">
+            <figure class="profile-image">
+              <img
+                src="./profile.jpg"
+                alt="profile"
+                width="100%"
+                height="100%"
+              />
+            </figure>
+
+            <input
+              id="tweet-input"
+              type="text"
+              placeholder="What's happening?"
+            />
+          </div>
+          <div class="icons-container">
+            <div class="icons">
+              <iconify-icon
+                class="icon"
+                icon="grommet-icons:gallery"
+              ></iconify-icon>
+              <iconify-icon
+                class="icon"
+                icon="material-symbols:gif-box-outline"
+              ></iconify-icon>
+              <iconify-icon
+                class="icon"
+                icon="fluent:poll-20-regular"
+                rotate="90deg"
+              ></iconify-icon>
+              <iconify-icon
+                class="icon"
+                icon="ic:outline-emoji-emotions"
+              ></iconify-icon>
+              <iconify-icon
+                class="icon"
+                icon="material-symbols:location-on-outline"
+              ></iconify-icon>
+            </div>
+            <button class="tweet-btn header-button" id="tweet-button">
+              Tweet
+            </button>
+          </div>
+        </div>
+        <!-- ------------------ feeds --------------------- -->
+        <div class="feed-container"></div>
+      </section>
+      <!-- ------------------ right --------------------- -->
+      <section class="right-section">
+        <div style="height: 100vh">dddd</div>
+      </section>
+    </main>
+    <script src="./common.js"></script>
+    <script src="./script.js"></script>
+  </body>
 </html>
