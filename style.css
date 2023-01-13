@@ -142,12 +142,6 @@ main {
   margin: 0 7px;
   cursor: pointer;
 }
-/* ********** right section********* */
-.right-section {
-  width: 30%;
-  background-color: #1c98eb;
-  height: 100vh;
-}
 
 /************** card *******************/
 .card-container {
@@ -211,4 +205,77 @@ main {
 iconify-icon:hover {
   cursor: pointer;
   color: #1c98eb;
+}
+
+/* ********** right section********* */
+.right-section {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  padding: 10px;
+}
+
+.search {
+  width: 100%;
+  background-color: #f1f1f1;
+  border-radius: 28px;
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+}
+
+.search iconify-icon {
+  font-size: 30px;
+  color: rgb(111, 110, 110);
+}
+
+.search input {
+  height: 100%;
+  width: 80%;
+  background-color: #f1f1f1;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  padding-left: 20px;
+}
+
+.trends-container {
+  width: 100%;
+  padding: 10px;
+  background-color: #f1f1f1;
+  margin-top: 20px;
+  border-radius: 15px;
+}
+
+.trends-container h3 {
+  margin-bottom: 10px;
+}
+
+.trend-container {
+  position: relative;
+  cursor: pointer;
+  margin: 10px 0;
+  padding: 10px 0;
+  padding-left: 5px;
+}
+.trend-container h4 {
+  margin: 5px 0;
+}
+.trend-container iconify-icon {
+  position: absolute;
+  right: 10px;
+  color: rgb(111, 110, 110);
+  top: 10px;
+}
+
+.trend-container p {
+  color: rgb(111, 110, 110);
+  font-size: 14px;
+}
+
+.trend-container:hover {
+  background-color: #dddada;
+  border-radius: 5px;
 }
